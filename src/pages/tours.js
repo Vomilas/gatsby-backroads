@@ -1,8 +1,9 @@
 import React, { Component } from "react"
+import Layout from "../components/Layout"
 
 class Tours extends Component {
   render() {
-    return <div>hello from tours page!!!</div>
+    return <Layout>hello from tours page!!!</Layout>
   }
 }
 
