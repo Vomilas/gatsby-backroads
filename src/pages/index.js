@@ -1,10 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import { FaAdobe } from "react-icons/fa"
-
+import SimpleHero from "../components/SimpleHero"
+import Banner from "../components/Banner"
 export default () => (
   <Layout>
-    <div>Hello from backroads</div>
-    <FaAdobe />
+    <SimpleHero>
+      <Banner
+        title="continue exploring"
+        info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore illum impedit mollitia nesciunt"
+      >
+        <Link to="/tours" className="btn-white">
+          explore tours
+        </Link>
+      </Banner>
+    </SimpleHero>
   </Layout>
 )
