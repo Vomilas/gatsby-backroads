@@ -8,7 +8,7 @@ export default () => (
     <SimpleHero>
       <Banner
         title="continue exploring"
-        info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore illum impedit mollitia nesciunt"
+        info="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       >
         <Link to="/tours" className="btn-white">
           explore tours
