@@ -9,8 +9,12 @@ module.exports = {
       discover what makes each of them unique. 
       Forget your daily routine & say yes to adventure`,
     author: "@vomilas",
+    twitterUsername: "@vomilas",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://vomilas-backroads.netlify.com",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
