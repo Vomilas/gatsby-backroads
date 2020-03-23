@@ -4,8 +4,9 @@ import Layout from "../components/Layout"
 import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import SEO from "../components/SEO"
 
-const BLog = ({ data }) => {
+const Blog = ({ data }) => {
   const {
     title,
     published,
@@ -42,14 +43,15 @@ const BLog = ({ data }) => {
   }
   return (
     <Layout>
-      <section className={styles.blog}>
+      <SEO title={title} />
+      <section className={styles.Blog}>
         <div className={styles.center}>
           <h1>{title}</h1>
           <h4>published at : {published}</h4>
           <article className={styles.post}>
             {documentToReactComponents(json, options)}
           </article>
-          <AniLink fade to="/blog" className="btn-primary">
+          <AniLink fade to="/Blog" className="btn-primary">
             all posts
           </AniLink>
         </div>
@@ -70,4 +72,4 @@ export const query = graphql`
   }
 `
 
-export default BLog
+export default Blog
